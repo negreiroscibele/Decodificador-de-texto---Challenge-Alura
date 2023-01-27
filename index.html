@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>CN Decodifier</title>
+  <title>Decodificador de Texto</title>
 </head>
 
 <body>
@@ -18,8 +18,10 @@
     <section class="conteudo-principal">
       
       <div class="conteudo-principal-caixa">
-
-        <h3 class="conteudo-principal-texto">Digite seu texto</h3>
+        
+        <div class="conteudo-principal-texto">
+          <textarea class="conteudo-principal-input" name="caixa-de-texto" id="input">Digite seu texto</textarea>
+        </div>
         
         <div class="alerta">
           <svg class="logo-alerta" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -40,12 +42,13 @@
     </section>
     
     <section class="conteudo-secundario">
-      <div class="display">Nenhuma mensagem encontrada</div>
-      <button>Copiar</button>
-    </section>
     
-
-
+      <div class="display">
+        <textarea class="textarea-display"></textarea>
+        <button>Copiar</button>
+      </div>
+    </section>
   </main>
+  <script src="script.js"></script>
 </body>
 </html>
