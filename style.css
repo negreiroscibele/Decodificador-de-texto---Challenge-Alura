@@ -127,13 +127,19 @@ body {
   width: 250px;
   margin: 20px 20px;
 
-  color: #495057;
+  
   background-image: url(/boneco.png);
-  -webkit-background-size: 250px 220px;
+  background-size: 250px 220px;
   background-repeat: no-repeat;
   border: none;
-
   resize: none;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  color: #0A3871;
 }
 
 .display button {
