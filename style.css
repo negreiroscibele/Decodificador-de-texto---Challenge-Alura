@@ -9,8 +9,10 @@
 
 body {
   font-size: 100%;
-  background: #e5e5e5;
   font-family: 'Inter', sans-serif;
+
+  background: rgb(65,116,180);
+  background: linear-gradient(0deg, rgba(65,116,180,1) 0%, rgba(216,223,232,1) 100%);
 }
 
 .cabecalho {
@@ -48,11 +50,18 @@ body {
 
   font-family: 'Inter';
   font-weight: 400;
-  font-size: 32px;
-  line-height: 150%;
   color: #0a3871;
-  background: #ffffff;
+
+  font-size: 18px;
+  line-height: 150%;
+  border: none;
+  box-shadow: 1px 1px 10px #0a3871;
   border-radius: 20px;
+  outline: 0;
+}
+
+.conteudo-principal-input::placeholder {
+  color: #0a3871;
 }
 
 .alerta {
@@ -66,7 +75,7 @@ body {
 
   font-size: 15px;
   line-height: 150%;
-  color: #495057;
+  color: #303033;
   opacity: 0.9;
 }
 
@@ -86,13 +95,20 @@ body {
   padding: 24px;
   background: #0a3871;
   width: 328px;
-  border: none;
+  border: 1px solid #0a3871;
   border-radius: 24px;
   font-size: 16px;
 }
 
 .conteudo-principal-botao:nth-child(1) {
-  color: #ffffff;
+  color: #ffffffef;
+}
+
+.conteudo-principal-botao:nth-child(1):hover {
+  cursor: pointer;
+  color: #0a3871;
+  background: #ffffffef;
+  border: 1px solid #0a3871;
 }
 
 .conteudo-principal-botao:nth-child(2) {
@@ -101,6 +117,13 @@ body {
 
   border: 1px solid #0a3871;
   border-radius: 24px;
+}
+
+.conteudo-principal-botao:nth-child(2):hover {
+  cursor: pointer;
+  color: #0a3871;
+  background: #ffffffef;
+  border: 1px solid #0a3871;
 }
 
 .conteudo-secundario {
@@ -117,29 +140,54 @@ body {
   width: 300px;
 
   background: #ffffff;
-  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  border: solid 2px grey;
+  box-shadow: 1px 1px 10px black;
   border-radius: 32px;
 }
 
-.display textarea {
+.textarea-display {
   padding: 20px 20px;
   height: 500px;
   width: 250px;
   margin: 20px 20px;
 
-  
-  background-image: url(/boneco.png);
-  background-size: 250px 220px;
-  background-repeat: no-repeat;
   border: none;
   resize: none;
+  outline: 0;
 
+  background: #e5e5e5;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 18px;
+  color: #0a3871;
   line-height: 150%;
-  color: #0A3871;
+}
+
+.texto-display {
+  position: absolute;
+  padding: 20px 20px;
+  height: 500px;
+  width: 250px;
+  margin: 20px 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  text-align: center;
+}
+
+.texto-display h4 {
+  margin-top: 32px;
+  margin-bottom: 16px;
+  color: #343a40;
+  line-height: 120%;
+}
+
+.texto-display p {
+  font-size: 13px;
+  color: #495057;
+  line-height: 150%;
 }
 
 .display button {
@@ -160,4 +208,5 @@ body {
 
 .display button:hover {
   background: #d8dfe8;
+  cursor: pointer;
 }

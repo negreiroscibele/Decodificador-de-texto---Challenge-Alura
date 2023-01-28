@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +20,7 @@
       <div class="conteudo-principal-caixa">
         
         <div class="conteudo-principal-texto">
-          <textarea class="conteudo-principal-input">Digite seu texto</textarea>
+          <textarea class="conteudo-principal-input" placeholder="Digite seu texto"></textarea>
         </div>
         
         <div class="alerta">
@@ -34,7 +34,7 @@
         
     <div class="conteudo-principal-botoes">
       
-      <button  class="conteudo-principal-botao" onclick="btnCriptografar()">Criptografar</button>
+      <button  class="conteudo-principal-botao" onclick="clicarCriptografar()">Criptografar</button>
       <button class="conteudo-principal-botao" onclick="btnDescriptografar()">Descriptografar</button>
     </div>
   </div>
@@ -45,7 +45,12 @@
     
       <div class="display">
         <textarea class="textarea-display"></textarea>
-        <button>Copiar</button>
+          <div class="texto-display">
+            <img src="/boneco.png" alt="">
+            <h4>Nenhuma mensagem encontrada</h4>
+            <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+          </div>
+        <button onclick="copiarTexto()">Copiar</button>
       </div>
     </section>
   </main>
