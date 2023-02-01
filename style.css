@@ -83,7 +83,7 @@ body {
   align-items: center;
   padding: 0px;
   gap: 24px;
-
+  
   margin: 10px 10px;
   gap: 8px;
 }
@@ -98,13 +98,13 @@ body {
 }
 
 .conteudo-principal-botao:nth-child(1) {
-  color: #ffffffef;
+  color: #ffffff;
 }
 
 .conteudo-principal-botao:nth-child(1):hover {
   cursor: pointer;
   color: #0a3871;
-  background: #ffffffef;
+  background: #ffffff;
   border: 1px solid #0a3871;
 }
 
@@ -119,7 +119,7 @@ body {
 .conteudo-principal-botao:nth-child(2):hover {
   cursor: pointer;
   color: #0a3871;
-  background: #ffffffef;
+  background: #ffffff;
   border: 1px solid #0a3871;
 }
 
@@ -164,14 +164,12 @@ body {
 
 .texto-display {
   position: absolute;
-  padding: 20px 20px;
-  height: 500px;
+  height: 350px;
   width: 250px;
-  margin: 20px 20px;
+  margin-top: -60px;
 
   display: flex;
   flex-direction: column;
-  justify-content: top;
   text-align: center;
 }
 
@@ -179,6 +177,7 @@ body {
   height: 200px;
   width: 210px;
   margin-top: 10px;
+  margin-left: 20px;
 }
 
 .texto-display h4 {
@@ -212,7 +211,7 @@ body {
 
 .display button:hover {
   background: #d8dfe8;
-  cursor: pointer;
+  cursor: pointer; 
 }
 
 /*----- FOOTER -----*/
@@ -245,4 +244,8 @@ body {
 
 .footer .buttons a {
   color: white;
+}
+
+.footer .buttons a:hover {
+  color:rgba(250, 250, 103, 0.877);
 }
